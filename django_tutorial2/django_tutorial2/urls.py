@@ -20,5 +20,5 @@ from home import views
 from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',include('home.urls'), name="index")
+    path('', include('home.urls')),  # Routes to your app
 ]
